@@ -187,7 +187,7 @@ class ReservationList extends Component {
 
   render() {
     const {reservations} = this.props;
-    if (!reservations || !reservations[this.props.selectedDay.toString('yyyy-MM-dd')]) {
+    if (!reservations) {
       if (this.props.renderEmptyData) {
         return this.props.renderEmptyData();
       }
